@@ -9,6 +9,32 @@
 </head>
 
 <body>
+  <header>
+    <div class="header-text">
+      <div class="header-btn">
+        <button><span></span>Sign In</button>
+      </div>
+      <p>Already have an Intuit Account?<br>
+        <a href="#">I forgot my User ID or Password</a></p>
+    </div>
+  </header>
+
+  <div class="logo">
+    <a class="logo-img" href="#"></a>
+  </div>
+
+  <div class="form-holder">
+    <form action="/login" method="post">
+      <label for="email">Email address</label>
+        <input type="email" name="email-address" required>
+      <label for="tel">Phone (recommended)</label>
+        <input type="tel" name="phone-number" required>
+      <label for="password">Password</label>
+        <input type="password" name="psw" required>
+      <button name="submit">
+        <strong>Create Account</strong>
+      </button>
+    </form>
 </body>
 
 </html>
