@@ -27,6 +27,24 @@ body {
   font-family: Helvetica, Arial, sans-serif;
 }
 
+.logo {
+  padding:20px 0;
+  margin:0 auto;
+  display:block;
+  width:100%;
+}
+
+.logo-img {
+  background-position: 0 0;
+  display:block;
+  margin:0 auto;
+  width:118px;
+  height:35px;
+  background-image: url(../img/ecosystem_logos_new.png);
+}
+
+/*header styles*/
+
 header {
   text-align:right;
   height:60px;
@@ -70,24 +88,34 @@ header div {
     background-image: url(../img/icon-whitelock@3x.png);
     background-size: contain;
     background-repeat: no-repeat;
-  }
-
-.logo {
-  padding:20px 0;
-  margin:0 auto;
-  display:block;
-  width:100%;
-}
-
-.logo-img {
-  background-position: 0 0;
-  display:block;
-  margin:0 auto;
-  width:118px;
-  height:35px;
-  background-image: url(../img/ecosystem_logos_new.png);
 }
 
 /*form styles*/
 
+.form-holder {
+  margin:0 auto;
+  width: 380px;
+  background: #fff;
+  height:80%;
+  padding:30px;
+  border: 1px solid #c7c7c7;
+}
+
+form input {
+  display:block;
+}
+
+.form-text {
+  text-align: center;
+}
+
+/*footer styles*/
+
+.footer {
+  text-align:center;
+}
+
+ul li {
+  display:inline-block;
+}
 /*media queries*/
