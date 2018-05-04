@@ -43,6 +43,11 @@ body {
   background-image: url(../img/ecosystem_logos_new.png);
 }
 
+a {
+  color: #0077C5;
+  text-decoration:none;
+}
+
 /*header styles*/
 
 header {
@@ -94,7 +99,7 @@ header div {
 
 .form-holder {
   margin:0 auto;
-  width: 380px;
+  width: 340px;
   background: #fff;
   height:80%;
   padding:30px;
@@ -109,13 +114,150 @@ form input {
   text-align: center;
 }
 
-/*footer styles*/
+.form-img ul {
+	text-align:center;
+}
 
-.footer {
+.form-img ul li {
+  display:inline-block;
+	margin-right:9px;
+}
+
+.form-img ul li:nth-child(1) {
+	height:23px;
+	width:101px;
+	background-image: url(../img/ecosystem_logos_new.png);
+	background-position:0 27px;
+}
+
+.form-img ul li:nth-child(2) {
+	height:23px;
+	width:126px;
+	background-image: url(../img/ecosystem_logos_new.png);
+	background-position:343px 27px;
+}
+
+.form-img ul li:nth-child(3) {
+	height:23px;
+	width:64px;
+	background-image: url(../img/ecosystem_logos_new.png);
+	background-position:204px 27px;
+}
+
+hr {
+  margin:15px 0;
+  background: #e2e1e1;
+}
+
+.show-tablet {
+  display:none;
+}
+
+.form-text h1 {
+  font-size:24px;
+  line-height:1.1;
+  color:#4c4c4c;
+}
+
+.form-text p {
+  padding:20px 0;
+  font-size:14px;
+  color:#4c4c4c;
+  font-weight:300;
+  line-height:1.2;
+}
+
+.form-text p a {
+  font-size:12px;
+}
+
+form label {
+  display:block;
+  font-size:14px;
+  margin:10px 0;
+  padding-top:6px;
+  line-height:25px;
+  color: #404040;
+}
+
+form input {
+  border: 1px solid #c1c5c8;
+  border-radius: 3px;
+  line-height:1.5em;
+  font-size:1.2em;
+  color:#000;
+  outline:0;
+  width:320px;
+  padding:0 6px 0 8px;
+}
+
+form button {
+  background: #0077C5;
+  border-radius:4px;
+  width:100%;
+  color:#fff;
+  box-shadow:0 1px 1px 0 rgba(0,0,0,.75);
+  padding:6px 12px;
+  line-height:2;
+  font-size: 1em;
+  white-space: nowrap;
+  vertical-align:middle;
+  cursor: pointer;
+  user-select: none;
+  margin:30px auto 40px auto;
+}
+
+form button span {
+  height:1em;
+  width:.8em;
+  margin-top:1px;
+  margin-right:4px;
+  vertical-align: text-top;
+  display:inline-block;
+  background-image:url(../img/icon-whitelock@3x.png);
+  background-size:contain;
+  background-repeat:no-repeat;
+}
+
+.form-footer {
+  color: #bbb;
+  font-size:12px;
+  line-height:1.75;
+  font-style:italic;
   text-align:center;
 }
 
-ul li {
-  display:inline-block;
+/*footer styles*/
+
+.footer {
+  padding-top:50px;
+  text-align:center;
+  color: #8c8c8c;
+  font-size:12px;
+  text-align:center;
+  line-height:1.5;
 }
+
+.footer ul li {
+  display:inline-block;
+  color: #505050;
+  padding:0 10px;
+}
+
+.footer p, .footer ul {
+  padding-bottom:10px;
+}
+
 /*media queries*/
+
+@media screen and (max-width:768px) {
+	header {
+		display:none;
+	}
+  .show-tablet {
+    display:block;
+  }
+  .footer {
+    font-size:10px;
+  }
+}
